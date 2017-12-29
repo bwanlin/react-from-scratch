@@ -952,6 +952,10 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 __webpack_require__(27);
 
+var _test = __webpack_require__(32);
+
+var _test2 = _interopRequireDefault(_test);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -961,26 +965,31 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var App = function (_React$Component) {
-    _inherits(App, _React$Component);
+	_inherits(App, _React$Component);
 
-    function App() {
-        _classCallCheck(this, App);
+	function App() {
+		_classCallCheck(this, App);
 
-        return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
-    }
+		return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+	}
 
-    _createClass(App, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                { className: 'text-red' },
-                'homepage'
-            );
-        }
-    }]);
+	_createClass(App, [{
+		key: 'render',
+		value: function render() {
+			return _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement(
+					'div',
+					{ className: 'text-red' },
+					'homepage'
+				),
+				_react2.default.createElement('img', { src: _test2.default })
+			);
+		}
+	}]);
 
-    return App;
+	return App;
 }(_react2.default.Component);
 
 _reactDom2.default.render(_react2.default.createElement(App, null), app);
@@ -18888,6 +18897,12 @@ module.exports = function (css) {
 	return fixedCss;
 };
 
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "bcb01c948f794b204b85e7a96ed0ef16.png";
 
 /***/ })
 /******/ ]);

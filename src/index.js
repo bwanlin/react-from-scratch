@@ -6,7 +6,11 @@ import '../assets/style/index.css'
 class App extends React.Component {
     render() {
         return (
-					<div className="text-red">homepage</div>
+					<div>
+						<div className="text-red">
+							homepage
+						</div>
+					</div>
         )
     }
 }
