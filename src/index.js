@@ -6,7 +6,7 @@ class App extends React.Component {
         return (
 					<div>
 						<div className="text-red">
-							homepage
+							homepage3
 						</div>
 					</div>
         )
@@ -18,4 +18,6 @@ ReactDOM.render(
 	app
 )
 
-//module.hot.accept();
+if (module.hot) {
+	module.hot.accept();
+}
